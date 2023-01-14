@@ -19,9 +19,9 @@ body {
 /* utility  */
 :root {
   /* max-width  */
-  --header : 1920px;
-  --banner-feature-spo-foo : 1440px;
-  --awards: 1286px;
+  --header : 1360px;
+  --banner-feature-spo-foo : 1020px;
+  --awards: 911px;
   /* bg color  */
   --bg-primary: rgba(255, 144, 14, 0.1);
   --highlight-color: #FF900E;
@@ -39,4 +39,64 @@ body {
   --small-wt : 500;
   --large-wt : 600;
   --xl-wt : 700;
+  /* padding  */
+  --padding-primary : 0 120px 0;
+}
+
+/* header styles */
+.header {
+  max-width: var(--header);
+  background: var(--bg-primary);
+}
+.logo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: var(--padding-primary);
+  margin-bottom: 50px;
+}
+.title-primary {
+  font-size: var(--xl);
+  font-weight: var(--xl-wt);
+  color: var(--bl);
+}
+.nav-wrapper {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.3rem;
+  font-size: var(--small);
+  font-weight: var(--small-wt);
+  color: var(--l-black);
+}
+.heading-wrapper {
+  max-width: 610px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.title-primary {
+  font-size: var(--xxl);
+  font-weight: var(--xl-wt);
+  color: var(--bl);
+}
+.heading-desc {
+  color: var(--l-black);
+}
+.btn-primary {
+  background: var(--highlight-color);
+  border: 0;
+  padding: 1rem;
+  color: var(--white);  
+}
+.block {
+  display: block;
+  margin: 0 auto 20px; 
+}
+
+/* banner image  */
+.banner {
+  max-width: var(--banner-feature-spo-foo);
+  margin: 0 auto 130px;
 }
