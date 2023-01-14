@@ -1,5 +1,5 @@
 /* fonts  */
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Work+Sans&display=swap');
 /* basic reset  */
 * {
   margin: 0;
@@ -9,4 +9,34 @@
 
 img {
   display: block;
+  width: 100%;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* utility  */
+:root {
+  /* max-width  */
+  --header : 1920px;
+  --banner-feature-spo-foo : 1440px;
+  --awards: 1286px;
+  /* bg color  */
+  --bg-primary: rgba(255, 144, 14, 0.1);
+  --highlight-color: #FF900E;
+  /* font color  */
+  --bl : #131313;
+  --l-black : #424242;
+  --gray : #727272;
+  --white : #ffffff;
+  /* font-size  */
+  --small : 1.25rem;
+  --large : 1.3rem;
+  --xl : 2.8rem;
+  --xxl : 4rem;
+  /* font-width  */
+  --small-wt : 500;
+  --large-wt : 600;
+  --xl-wt : 700;
 }
