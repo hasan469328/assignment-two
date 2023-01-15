@@ -52,7 +52,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   padding: var(--padding-primary);
   margin-bottom: 50px;
 }
@@ -64,7 +63,6 @@ body {
 .nav-wrapper {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
   gap: 1.3rem;
   font-size: var(--small);
   font-weight: var(--small-wt);
@@ -188,7 +186,6 @@ body {
   max-width: var(--awards);
   margin: 0 auto 50px;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   
@@ -277,4 +274,92 @@ input,textarea {
   padding: 10px;
   font-size: var(--small);
   color: var(--bl);
+}
+
+.hide {
+  display: none;
+}
+/* responsive for mobile & smaller device  */
+@media screen and (max-width: 568px) {
+/* body {
+  overflow: hidden;
+} */
+  .logo-wrapper {
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-direction: column;
+    padding: 0.7rem 0 0 0;
+}
+.nav-wrapper {
+  margin-top: 0.7rem;
+  gap: 0.6rem;  
+}
+.title-secondary {
+  font-size: var(--xl);
+}
+.feature-wrapper {
+  flex-direction: column-reverse;
+}
+.quick-list-wrapper {
+  text-align: center;
+}
+.love-wrapper {
+  display: flex;
+  padding: 10px 5px 20px;
+  flex-direction: column;
+}
+.relative {
+  position: static;
+  width: 100%;
+  height: 100%;
+}
+.features-desc-wrapper {
+  max-width: 100%;
+}
+.big {
+  position: static;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.btn-big {
+  font-size: var(--xl);
+}
+.some-facts {
+  margin-bottom: 20px;
+  margin-left: 0;
+  margin-top: 365px;
+  padding: 10px;
+}
+.stats-wrapper {
+  flex-direction: column;
+  gap: 15px;  
+}
+.stat {
+  width: 207px;
+}
+.form {
+  width: 95%;
+  padding: 5px;
+}
+.responsive {
+  font-size: 1.3rem;
+}
+input, textarea {
+  width: 90%;
+}
+.sponsers-heading {
+  padding: 10px;
+}
+.sponsors-logo-wrapper {
+  max-width: 90%;
+  margin: 0 auto 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo-bl-wh {
+  width: 130px;
+}
 }
